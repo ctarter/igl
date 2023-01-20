@@ -1,0 +1,136 @@
+#missions-button{
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    top: 80px;
+    height: 208px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#rajakatti-button{
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    top: 80px;
+    height: 208px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#updates-button {
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    top: 80px;
+    height: 208px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#pray-button{
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    top: 80px;
+    height: 208px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#support-button{
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    top: 80px;
+    height: 208px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#scripture-button{
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    top: 80px;
+    height: 208px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#toptitle {
+    left: 40px;
+    top: 54px;
+    position: absolute;
+    overflow: visible;
+    line-height: 120px;
+    margin-top: -10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    color: rgba(255,255,255,1);
+}
+
+#home-ico {
+    position: absolute;
+    width: 77px;
+    height: 73px;
+    left: 1781px;
+    top: 65px;
+    overflow: visible;
+    --web-animation: fadein 1s ease-in-out;
+    --web-action-type: page;
+    --web-action-target: home.html;
+    cursor: pointer;
+    }
+
+#home_bl {
+    position: absolute;
+    width: 77px;
+    height: 73px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#buttons_nav {
+    position: absolute;
+    width: 1442px;
+    height: 208px;
+    left: 240px;
+    top: 858px;
+    overflow: visible;
+}
+
