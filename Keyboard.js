@@ -164,7 +164,7 @@ const Keyboard = {
         this.eventHandlers.onclose = onclose;
         this.elements.main.classList.remove("keyboard--hidden");
         const pray2 = document.querySelector('.pray2');
-        pray2.style.cssText += 'bottom: 140px!important;transition: bottom 0.4s!important;'
+        // pray2.style.cssText += 'bottom: 140px!important;transition: bottom 0.4s!important;'
     },
 
     close() {
@@ -173,7 +173,7 @@ const Keyboard = {
         this.eventHandlers.onclose = onclose;
         this.elements.main.classList.add("keyboard--hidden");
         const pray2 = document.querySelector('.pray2');
-        pray2.style.cssText += 'bottom: 0px!important;transition: bottom 0.4s!important;'
+        // pray2.style.cssText += 'bottom: 0px!important;transition: bottom 0.4s!important;'
     }
 };
 

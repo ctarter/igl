@@ -95,7 +95,7 @@
 			  0% { transform: translateY(100%); }
 			  100% { transform: translateY(-100%); }
 			}
-		}
+			
 	#IS_PRAYING {
 		left: 1598.629px;
 		top: 72.215px;
@@ -139,52 +139,45 @@
 		font-size: 50px;
 		color: rgba(55,55,55,1);
 	}
+
 	#pledge {
-		position: absolute;
-		width: 319.1px;
-		height: 388.446px;
-		left: 1457.83px;
-		top: 327.777px;
-		overflow: visible;
-		transition: all 0.6000000238418579s ease-in-out;
-		--web-animation: fadein 0.6000000238418579s ease-in-out;
-		--web-action-type: page;
-		--web-action-target: pray2.html;
-		cursor: pointer;
+	    position: absolute;
+	    left: 1570px;
+	    top: 370px;
+	    overflow: visible;
+	    transition: all 0.6s ease-in-out;
+	    --web-animation: fadein 0.6s ease-in-out;
+	    --web-action-type: page;
+	    --web-action-target: pray2.html;
+	    cursor: pointer;
 	}
+
 	#Ellipse_1_copy_4_ft {
-		opacity: 0.902;
-		fill: rgba(255,255,255,1);
-		stroke: rgba(48,116,130,1);
+		fill: white;
+		stroke: #008994;
 		stroke-width: 18px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 100;
-		shape-rendering: auto;
 	}
+
 	.Ellipse_1_copy_4_ft {
-		filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.502));
-		position: absolute;
-		overflow: visible;
-		width: 358.1px;
-		height: 358.1px;
-		left: 0px;
-		top: 32.683px;
+	    position: absolute;
+	    overflow: visible;
+	    display: none;
 	}
+
 	#n__PRAYER_PLEDGE {
-		left: 0px;
-		top: 34px;
-		position: absolute;
-		overflow: visible;
-		width: 320px;
-		height: 388px;
-		text-align: center;
-		font-family: 'Poppins', sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 41px;
-		color: rgba(74,134,145,1);
+	    left: 123px;
+	    top: 123px;
+	    position: absolute;
+	    line-height: 34px;
+	    overflow: visible;
+	    text-align: center;
+	    font-family: 'Poppins', sans-serif;
+	    font-style: normal;
+	    font-weight: bold;
+	    font-size: 34px;
+	    color: #008994;
 	}
+
 	#buttons_fv {
 		position: absolute;
 		width: 1442px;
@@ -3388,45 +3381,19 @@ window.application = new Application();
 			</rect>
 		</svg>
 
-		<div id="prayfor">
-		    <h4>What to pray for?</h4>
-			<label>
-		      	<ul class= "bullets">
-		      		<li>To pray for the salvation of souls in India, that many may come to know Jesus Christ as their Lord and Savior.</li><br>
-		      		<li>To pray for the Christian church in India, that they may have strength and courage to share the Good News with others, and that they may be protected from persecution.</li><br>
-		      		<li>To pray for the leaders of India, that they would have wisdom and guidance from God as they make decisions that affect the lives of millions.</li><br>
-		      		<li>To pray for the spiritual and physical well-being of the people of India, that they would find peace and comfort in times of crisis.</li>
-	      		</ul>
-  			</label>
-		</div>
-
-			<style type="text/css">
-				.bullets {
-				    margin: 50px 10px 10px 60px;
-				    font-family: 'Poppins', sans-serif;
-				    font-style: normal;
-				    font-weight: normal;
-				    line-height: 40px;
-				    font-size: 25px;
-				    color: rgba(55,55,55,1);
-					}
-
-					#prayfor {
-					    left: 100px;
-					    top: 250px;
-					    position: absolute;
-					    overflow: visible;
-					    width: 1050px;
-					    height: 578px;
-					    line-height: 30px;
-					    text-align: left;
-					    font-family: 'Poppins', sans-serif;
-					    font-style: normal;
-					    font-weight: normal;
-					    font-size: 50px;
-					    color: rgba(55,55,55,1);
-						}
-			</style>
+	<div>
+		<img id="raj2"src="pray1.png">
+		<style type="text/css">
+			#raj2 {
+				position: absolute;
+				overflow: visible;
+				width: 1920px;
+				height: 602px;
+				top: 221px;
+				left: 0px;
+			}
+		</style>
+	</div>
 
 		<div onclick="application.goToTargetView(event)" id="pledge" class="pledge">
 			<svg class="Ellipse_1_copy_4_ft">
@@ -3434,7 +3401,7 @@ window.application = new Application();
 				</ellipse>
 			</svg>
 			<div id="n__PRAYER_PLEDGE">
-				<span></span><br/><span></span><br/><span style="font-family:Poppins,sans-serif;font-size:52.0000114440918px;">PRAYER</span><br/><span style="font-family:Poppins,sans-serif;font-size:52.0000114440918px;">PLEDGE</span>
+				<span>PRAYER</span><br/><span>PLEDGE</span>
 			</div>
 		</div>
 	</div>

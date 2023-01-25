@@ -3371,24 +3371,27 @@ window.application = new Application();
 			</rect>
 		</svg>
 
-		<div id="pledge">
-		    <h4>Pledge to Pray for India</h4>
+
+	<div>
+		<img id="raj2"src="pray2.png">
+		<style type="text/css">
+			#raj2 {
+				position: absolute;
+				overflow: visible;
+				width: 1920px;
+				height: 602px;
+				top: 221px;
+				left: 0px;
+			}
+		</style>
+
+			<div id="pledge">
 			    <form class="form-inline" method="post" action="submit.php">
-			      <label>I pledge to pray for the people of India and the spread of the Gospel. I understand the importance of prayer in the advancement of the Kingdom of God, and I commit to the following:</label><br>
-			      <label>
-			      	<ul class= "bullets">
-			      		<li>To pray for the salvation of souls in India, that many may come to know Jesus Christ as their Lord and Savior.</li>
-			      		<li>To pray for the Christian church in India, that they may have strength and courage to share the Good News with others, and that they may be protected from persecution.</li>
-			      		<li>To pray for the leaders of India, that they would have wisdom and guidance from God as they make decisions that affect the lives of millions.</li>
-			      		<li>To pray for the spiritual and physical well-being of the people of India, that they would find peace and comfort in times of crisis.</li>
-		      		</ul>
-	      			</label>
-			      <label>I make this pledge with a sincere heart, knowing that through prayer, God can move mountains and change lives.</label><br>
 			      <label>Signed: <input class="use-keyboard-input" type="text" id="fname" placeholder="John" name="fname" required>
 				  <input class="use-keyboard-input" type="text" id="lname" placeholder="Smith" name="lname"required></label>
 			      <button type="submit" value="Submit">Submit</button>
 			    </form>
-		</div>
+			</div>
 				<style type="text/css">
 					.bullets {
 					    margin: 10px 10px 10px 60px;
@@ -3402,7 +3405,7 @@ window.application = new Application();
 
 				  	.form-inline {
 					    position: absolute;
-					    top: 50px;
+					    top: 390px;
 					    left: 5px;
 					    width: 1070px;
 						}
@@ -3456,19 +3459,7 @@ window.application = new Application();
 						    flex-direction: column;
 						    align-items: stretch;
 						  }
-						}
-				  </style>
 
-		<div onclick="application.goToTargetView(event)" id="back" class="back">
-			<svg class="Ellipse_1_copy_4_ft">
-				<ellipse id="Ellipse_1_copy_4_ft" rx="159.5500030517578" ry="159.5500030517578" cx="159.5500030517578" cy="159.5500030517578">
-				</ellipse>
-			</svg>
-			<div id="n__PRAYER_PLEDGE">
-				<span>BACK</span>
-			</div>
-
-			<style type="text/css">
 					#Ellipse_1_copy_4_ft {
 						opacity: 0.902;
 						fill: rgba(255,255,255,1);
@@ -3503,11 +3494,26 @@ window.application = new Application();
 						color: rgba(74,134,145,1);
 					}
 			</style>
-
-
+		</div>
+		<div>
+			<img onclick="application.goToTargetView(event)" id="Arrow-button-bwd" src="arrow_blue.png">
+				<style type="text/css">
+					#Arrow-button-bwd {
+					    position: absolute;
+					    rotate: 180;
+					    width: 100px;
+					    height: 100px;
+					    top: 720px;
+					    overflow: visible;
+					    transition: all 0.6s ease-in-out;
+					    -webkit-transform:rotate(180deg);
+					    --web-animation: fadein 0.6s ease-in-out;
+					    --web-action-type: page;
+					    --web-action-target: pray1.html;
+					}
+				</style>
 		</div>
 	</div>
-
 
 
 

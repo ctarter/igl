@@ -3278,11 +3278,55 @@ window.application = new Application();
 			<span>MONTHLY UPDATES</span>
 		</div>
 		<svg class="Rectangle_4_d">
-			<rect id="Rectangle_4_d" rx="0" ry="0" x="0" y="0" width="1921" height="598">
+			<rect id="Rectangle_4_d" rx="0" ry="0" x="0" y="0" width="1920" height="598">
 			</rect>
 		</svg>
-		<div id="n__Viverra_vitae_congue_eu_con">
-			<span>- Viverra vitae congue eu consequat ac felis donec. </span><br/><span>- At tempor commodo ullamcorper a lacus vestibulum. </span><br/><span>- At volutpat diam ut venenatis tellus in metus vulputate eu. </span><br/><span>- Cras semper auctor neque vitae tempus. </span><br/><span>- Lacus vestibulum sed arcu non odio euismod. </span><br/><span>- Sed libero enim sed faucibus turpis.</span>
+		<div>
+			<img id="raj2"src="update1.png">
+			<style type="text/css">
+				#raj2 {
+					position: absolute;
+					overflow: visible;
+					width: 1920px;
+					height: 602px;
+					top: 221px;
+					left: 0px;
+				}
+			</style>
+		</div>
+
+		<div>
+			<img onclick="application.goToTargetView(event)" id="Arrow-button-fwd" src="arrow_brown.png">
+			<img onclick="application.goToTargetView(event)" id="Arrow-button-bwd" src="arrow_brown.png">
+
+			<style type="text/css">
+				#Arrow-button-fwd {
+				    position: absolute;
+				    width: 100px;
+				    height: 100px;
+				    left: 1820px;
+				    top: 720px;
+				    overflow: visible;
+				    transition: all 0.6s ease-in-out;
+				    --web-animation: fadein 0.6s ease-in-out;
+				    --web-action-type: page;
+				    --web-action-target: updates2.html;
+				}
+
+				#Arrow-button-bwd {
+				    position: absolute;
+				    rotate: 180;
+				    width: 100px;
+				    height: 100px;
+				    top: 720px;
+				    overflow: visible;
+				    transition: all 0.6s ease-in-out;
+				    -webkit-transform:rotate(180deg);
+				    --web-animation: fadein 0.6s ease-in-out;
+				    --web-action-type: page;
+				    --web-action-target: updates.html;
+				}
+			</style>
 		</div>
 	</div>
 
