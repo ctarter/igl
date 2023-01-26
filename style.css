@@ -2,92 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#missions-button{
-    position: absolute;
-    overflow: visible;
-    width: 180px;
-    top: 80px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
 }
 
-#rajakatti-button{
-    position: absolute;
-    overflow: visible;
-    width: 180px;
-    top: 80px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
+/*NAV BUTTONS ON PAGES*/
+.button-row {
+	position: absolute;
+	display: flex;
+	left: 46px;
+	width: 85%;
+	top: 850px;
+	justify-content: space-between;
+}
+button {
+	position: absolute;
+	overflow: visible;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border-radius: 50%;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	color: #FFFFFF;
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.302));
 }
 
-#updates-button {
-    position: absolute;
-    overflow: visible;
-    width: 180px;
-    top: 80px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
+button.active {
+    border-color: white;
+    border: 10px solid;
 }
 
-#pray-button{
-    position: absolute;
-    overflow: visible;
-    width: 180px;
-    top: 80px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
+.missions {
+	background-color: #768a55;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: missions.html;
+	cursor: pointer;
+}
+.rajakatti {
+	background-color: #be2141;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: raj1.html;
+	cursor: pointer;
+}
+.updates {
+	background-color: #514235;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: updates.html;
+	cursor: pointer;
+}
+.pray {
+	background-color: #008994;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: pray1.html;
+	cursor: pointer;
+}
+.support {
+	background-color: #eb951a;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: support.html;
+	cursor: pointer;
+}
+.scripture {
+	background-color: #707070;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: scrip1.html;
+	cursor: pointer;
 }
 
-#support-button{
-    position: absolute;
-    overflow: visible;
-    width: 180px;
-    top: 80px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-#scripture-button{
-    position: absolute;
-    overflow: visible;
-    width: 180px;
-    top: 80px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-#toptitle {
+/*TITLE OF PAGES*/
+.toptitle {
     left: 40px;
     top: 54px;
     position: absolute;
@@ -99,10 +95,27 @@
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
-    color: rgba(255,255,255,1);
+    color: white;
 }
 
-#home-ico {
+/*TYPER*/
+#credits {
+	left: 960px;
+	top: 72px;
+	position: absolute;
+	overflow: visible;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	color: white;
+	}
+
+	@keyframes scroll {
+	  0% { transform: translateY(100%); }
+	  100% { transform: translateY(-100%); }
+	}
+
+/*HOME BUTTON ON PAGES*/
+.home-button {
     position: absolute;
     width: 77px;
     height: 73px;
@@ -115,20 +128,307 @@
     cursor: pointer;
     }
 
-#home_bl {
-    position: absolute;
-    width: 77px;
-    height: 73px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+/*SINGLE IMAGE*/
+.single-img {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 600px;
+	top: 221px;
 }
 
-#buttons_nav {
+/*PICTURE SCROLLER*/
+.carousel {
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	top: 223px;
+}
+
+.carousel-indicators {
+	bottom: -40px!important;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	height: 600px!important;
+}
+
+.carousel-inner {
+	overflow: visible!important;
+}
+
+svg:not(:root) {
+	overflow: visible!important;
+}
+
+.carousel-control {
+	width: 3%;
+	color: white;
+	filter: alpha(opacity=50);
+	opacity: 75%;
+}
+
+/*RAJ PAGE*/
+.raj {
+	position: absolute;
+	overflow: hidden;
+	width: 1920px;
+	height: 1080px;
+	background-color: #be2141;
+}
+
+.india-title {
+    left: 1150px;
+    top: 55px;
     position: absolute;
-    width: 1442px;
-    height: 208px;
-    left: 240px;
-    top: 858px;
     overflow: visible;
+    font-family: 'Poppins', sans-serif;
+    font-size: 43px;
+    color: white;
+}
+
+#india-time {
+    left: 1150px;
+    top: 120px;
+    position: absolute;
+    overflow: visible;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#india-weather {
+    left: 1440px;
+    top: 120px;
+    position: absolute;
+    overflow: visible;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+/*UPDATES PAGE*/
+.upd {
+	position: absolute;
+	overflow: hidden;
+	width: 1920px;
+	height: 1080px;
+	background-color: #514235;
+}
+
+/*PRAY PAGE*/
+.pra {
+	position: absolute;
+	overflow: hidden;
+	width: 1920px;
+	height: 1080px;
+	background-color: #008994;
+}
+
+.pledge {
+    position: absolute;
+    overflow: visible;
+    left: 1635px;
+    top: 397px;
+    overflow: visible;
+	animation: fadein 1s;
+    --web-action-type: page;
+    --web-action-target: pray2.html;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #008994;
+    background-color: white;
+    border: 10px solid #008994;
+}
+
+.sign {
+	left: 60px;
+	top: 180px;
+	position: absolute;
+	overflow: visible;
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	color: rgba(55,55,55,1);
+}
+
+.form-inline {
+	position: absolute;
+	top: 390px;
+	width: 1070px;
+}
+
+.form-inline label {
+	margin: 10px 10px 0px 0;
+	max-width: 50%!important;
+}
+
+.form-inline input {
+	vertical-align: middle;
+	margin: 5px 10px 5px 0;
+	padding: 10px;
+	background-color: white;
+	border: 1px solid #ddd;
+}
+
+.form-inline button {
+    background-color: #008994;
+    width: 150px!important;
+    height: 150px!important;
+    cursor: pointer;
+    font-size: 25px!important;
+    top: 55px;
+}
+
+.qrcode {
+    position: absolute;
+    overflow: visible;
+    width: 300px;
+    left: 940px;
+    top: 520px;
+}
+
+/*SUPPORT PAGE*/
+.sup {
+	position: absolute;
+	overflow: hidden;
+	width: 1920px;
+	height: 1080px;
+	background-color: #eb951a;
+}
+
+/*MISSIONS PAGE*/
+.mis {
+	position: absolute;
+	overflow: hidden;
+	width: 1920px;
+	height: 1080px;
+	background-color: #768a55;
+}
+
+.mis-title {
+	left: 40px;
+    top: 54px;
+    position: absolute;
+    overflow: visible;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+}
+
+/*SCRIPTURE PAGE*/
+.scr {
+	position: absolute;
+	overflow: hidden;
+	width: 1920px;
+	height: 1080px;
+	background-color: #707070;
+}
+
+.space {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 600px;
+	top: 221px;
+	background-color: white;
+	animation: fadein 1s;
+}
+
+.header {
+    left: 35px;
+    top: 20px;
+    position: absolute;
+    overflow: visible;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: rgba(55,55,55,1);
+}
+
+.verse-full {
+    left: 60px;
+    top: 120px;
+    padding: 25px;
+    border: 25px solid #be2141;
+    border-radius: 25px;
+    position: absolute;
+    overflow: visible;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    width: 1800px;
+    height: 435px;
+    background-color: #be2141;
+    color: white;
+    animation: fadein 1s;
+}
+
+.close {
+    position: absolute;
+    overflow: visible;
+    width: 40px;
+    height: 40px;
+    left: 1700px;
+    top: 0px;
+}
+
+.container-f {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 80px;
+    margin-left: 100px;
+    padding: 50px;
+    align-items: center;
+    height: 500px;
+    animation: fadein 1s;
+}
+
+.verse1, .verse2, .verse3, .verse4, .verse5, .verse6 {
+    display: flex;
+    padding: 25px;
+    border: 25px solid #be2141;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    width: 470px;
+    height: 160px;
+    background-color: #be2141;
+    color: white;
+    animation: fadein 1s;
+    align-items: center;
+    justify-content: center;
+}
+
+.bible {
+    position: absolute;
+    overflow: visible;
+    width: 500px;
+    top: 360px;
+}
+
+.bibleflip {
+    position: absolute;
+    top: 63px;
+    left: 1240px;
+    height: 500px;
+    border: 15px solid #be2141;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 33px;
+    text-align: center;
+    width: 370px;
+    height: 80px;
+    background-color: #be2141;
+    color: white;
+    animation: fadein 1s;
+	--web-action-type: page;
+    --web-action-target: scrip2.html;
+	cursor: pointer;
 }
