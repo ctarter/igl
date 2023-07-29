@@ -1,5 +1,3 @@
-Corey Tarter
-Ryan Hemphill
 Calvin Muller
 Jen Allen
 Zack Neader
@@ -15,5 +13,4 @@ Alex Martin
 Rachel Douglas
 Nick Rothermel
 Fred Shaffer IV
-Alex Martin
 Caitlin McCallum
