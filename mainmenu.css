@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#home {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: #000000;
+	overflow: hidden;
+	--web-view-name: home;
+	--web-view-id: home;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#india {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	opacity: 40%;
+	overflow: visible;
+}
+.logo {
+	left: 30px;
+	top: 930px;
+	width: 270px;
+	position: absolute;
+	overflow: visible;
+}
+.row {
+	position: absolute;
+	display: flex;
+	left: 20px;
+	width: 85%;
+	justify-content: space-between;
+}
+.button {
+	position: absolute;
+	overflow: visible;
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	top: 400px;
+	padding: 20px;
+	border-radius: 50%;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 33px;
+	color: #FFFFFF;
+}
+.missions {
+	background-color: #768a55;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: missions.html;
+	cursor: pointer;
+}
+.rajakatti {
+	background-color: #be2141;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: raj1.html;
+	cursor: pointer;
+}
+.updates {
+	background-color: #514235;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: updates.html;
+	cursor: pointer;
+}
+.pray {
+	background-color: #008994;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: pray1.html;
+	cursor: pointer;
+}
+.support {
+	background-color: #eb951a;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: support.html;
+	cursor: pointer;
+}
+.scripture {
+	background-color: #707070;
+	animation: fadein 1s;
+	--web-action-type: page;
+	--web-action-target: scrip1.html;
+	cursor: pointer;
+}
+
+.praying {
+	position: absolute;
+    overflow: visible;
+    left: 1340px;
+    top: 970px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+	@keyframes scroll {
+	  0% { transform: translateY(100%); }
+	  100% { transform: translateY(-100%); }
+	}

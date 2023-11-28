@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Keyboard.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<title>pray2</title>
+</head>
+<body>
+<div class="pra">
+	<div onclick="application.goToTargetView(event)" class="home-button">
+		<img src="home_bl.png" alt="home">
+	</div>
+	<div class="toptitle">
+		<span>PRAY FOR INDIA</span>
+	</div>
+	<div id="credits">
+		<span>Who's Praying: <span class="auto-type"</span></span>
+	</div>
+	<div>
+		<img class="single-img" src="pray2.png" alt="pray2">
+	</div>
+	<div>
+		<img class="qrcode" src="prayqr.png">
+	</div>
+	<div class="sign">
+			    <form class="form-inline" method="post" action="submit.php" autocomplete="off">
+			      <label>Signed: <input class="use-keyboard-input" type="text" id="fname" placeholder="John" name="fname" autocomplete="off" required>
+				  <input class="use-keyboard-input" type="text" id="lname" placeholder="Smith" name="lname" autocomplete="off" required></label>
+			      <button type="submit" value="Submit">Submit</button>
+			    </form>
+			</div>
+	<div class="button-row">
+		<div>
+			<button class="missions" onclick="application.goToTargetView(event)" data-url="http://localhost/missions.html">MISSIONS</button>
+		</div>
+		<div>
+			<button class="rajakatti" onclick="application.goToTargetView(event)" data-url="http://localhost/raj1.html">RAJAKATTI</button>
+		</div>
+		<div>
+			<button class="updates" onclick="application.goToTargetView(event)" data-url="http://localhost/updates.html">UPDATES</button>
+		</div>
+		<div>
+			<button class="pray" onclick="application.goToTargetView(event)" data-url="http://localhost/pray2.html">PRAY</button>
+		</div>
+		<div>
+			<button class="support" onclick="application.goToTargetView(event)" data-url="http://localhost/support.html">SUPPORT</button>
+		</div>
+		<div>
+			<button class="scripture" onclick="application.goToTargetView(event)" data-url="http://localhost/scrip1.html">SCRIPTURE</button>
+		</div>
+	</div>
+</div>
+<script src="Keyboard.js"></script>
+<script src="./active.js"></script>
+<script src="./home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+	fetch('names.txt')
+	  .then(response => response.text())
+	  .then(data => {
+		var typed = new Typed(".auto-type", {
+			strings: data.split('\n'),
+			typeSpeed: 120,
+			backSpeed: 30,
+			loop: true
+		})
+	})
+</script>
+</body>
+</html>
