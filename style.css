@@ -46,11 +46,11 @@ button.active {
 	--web-action-target: missions.html;
 	cursor: pointer;
 }
-.rajakatti {
+.impactb {
 	background-color: #be2141;
 	animation: fadein 1s;
 	--web-action-type: page;
-	--web-action-target: raj1.html;
+	--web-action-target: impact.html;
 	cursor: pointer;
 }
 .updates {
@@ -169,7 +169,7 @@ svg:not(:root) {
 }
 
 /*RAJ PAGE*/
-.raj {
+.impact {
 	position: absolute;
 	overflow: hidden;
 	width: 1920px;

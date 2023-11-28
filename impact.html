@@ -6,17 +6,17 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<title>raj1</title>
+<title>impact</title>
 </head>
 <body>
-<div class="raj">
+<div class="impact">
 	<div class="toptitle">
-		<span>ABOUT RAJAKATTI</span>
+		<span>OUR IMPACT</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" class="home-button">
 		<img src="home_bl.png" alt="home">
 	</div>
-	<div class="india-title">Rajakatti Village Cluster</div>
+	<div class="india-title">Bharuch, Gujarat</div>
 		<div id="india-time">
 			<script>
 			  function updateTime() {
@@ -56,32 +56,32 @@
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <!-- <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li> -->
               </ol>
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="raj1.png" style="width:100%;">
+                  <img src="impact2.png" style="width:100%;">
                 </div>
 
                 <div class="item">
-                  <img src="raj2.png" style="width:100%;">
+                  <img src="impact1.png" style="width:100%;">
+                </div>
+
+                <!-- <div class="item">
+                  <img src="impact3.png" style="width:100%;">
                 </div>
 
                 <div class="item">
-                  <img src="raj3.png" style="width:100%;">
+                  <img src="impact4.png" style="width:100%;">
                 </div>
 
                 <div class="item">
-                  <img src="raj4.png" style="width:100%;">
-                </div>
-
-                <div class="item">
-                  <img src="raj5.png" style="width:100%;">
-                </div>
+                  <img src="impact5.png" style="width:100%;">
+                </div> -->
               </div>
 
               <!-- Left and right controls -->
@@ -93,14 +93,23 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
-            </div>
+			</div>
+
+			<script>
+				$(document).ready(function () {
+				  // Set the interval for auto-sliding
+				  $('#myCarousel').carousel({
+					interval: 15000 // 15 seconds in milliseconds
+				  });
+				});
+			  </script>
 	</div>
 	<div class="button-row">
 		<div>
 			<button class="missions" onclick="application.goToTargetView(event)" data-url="http://localhost/missions.html">MISSIONS</button>
 		</div>
 		<div>
-			<button class="rajakatti" onclick="application.goToTargetView(event)" data-url="http://localhost/raj1.html">RAJAKATTI</button>
+			<button class="impactb" onclick="application.goToTargetView(event)" data-url="http://localhost/impact.html">IMPACT</button>
 		</div>
 		<div>
 			<button class="updates" onclick="application.goToTargetView(event)" data-url="http://localhost/updates.html">UPDATES</button>

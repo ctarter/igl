@@ -33,11 +33,11 @@ button.active {
 	--web-action-target: missions.html;
 	cursor: pointer;
 }
-.rajakatti {
+.impact {
 	background-color: #be2141;
 	animation: fadein 1s;
 	--web-action-type: page;
-	--web-action-target: raj1.html;
+	--web-action-target: impact.html;
 	cursor: pointer;
 }
 .updates {
