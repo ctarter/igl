@@ -1,4 +1,4 @@
-a.emger: hover #top-header {
+a.emger hover #top-header {
 	background: #E6E6E6
 }
 #header {
@@ -58,7 +58,7 @@ a.emger: hover #top-header {
 	border-radius: 8px;
 	white-space: nowrap
 }
-#emergency-response-opt p: last-of-type {
+#emergency-response-opt p last-of-type {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	margin-top: 0

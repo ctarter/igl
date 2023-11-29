@@ -96,13 +96,14 @@
 			</div>
 
 			<script>
-				$(document).ready(function () {
-				  // Set the interval for auto-sliding
+				$(window).on('load', function() {
+				  // Initialize the carousel with a 15-second interval
 				  $('#myCarousel').carousel({
 					interval: 15000 // 15 seconds in milliseconds
 				  });
 				});
 			  </script>
+			  
 	</div>
 	<div class="button-row">
 		<div>
